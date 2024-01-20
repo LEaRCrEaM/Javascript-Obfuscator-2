@@ -3,23 +3,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      body, html {
-        margin: 0;
-        height: 100%;
-      }
-      textarea {
-        resize: none;
-        margin: 15px;
-        height: calc(100% - 45px);
-        width: calc(50% - 45px);
-      }
-    </style>
-  </head>
-<body>1 (script tag)
+    body, html {
+      height: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 90vh;
+      width: 40%;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <span>1 (script tag)</span>
   <textarea id="input"></textarea>
-  <textarea id="output" readonly></textarea>2 (script tag)
+  <textarea id="output" readonly></textarea>
+
+  <span>2 (script tag)</span>
   <textarea id="input2"></textarea>
-  <textarea id="output2" readonly></textarea> 3 (eval)
+  <textarea id="output2" readonly></textarea>
+
+  <span>3 (eval)</span>
   <textarea id="input3"></textarea>
   <textarea id="output3" readonly></textarea>
   <script>
